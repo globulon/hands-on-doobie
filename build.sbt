@@ -166,22 +166,18 @@ lazy val zioSettings = Seq(
     }
 )
 
-
-lazy val dbSettings = Seq (
+lazy val dbSettings = Seq(
   libraryDependencies ++= Seq(
-
-  // Start with this one
-  "org.tpolecat" %% "doobie-core"      % Versions.doobie,
-
-  // And add any of these as needed
-  "org.tpolecat" %% "doobie-h2"        % Versions.doobie,          // H2 driver 1.4.200 + type mappings.
-  "org.tpolecat" %% "doobie-hikari"    % Versions.doobie,          // HikariCP transactor.
-  "org.tpolecat" %% "doobie-postgres"  % Versions.doobie,          // Postgres driver 42.2.12 + type mappings.
-  // "org.tpolecat" %% "doobie-quill"     % Versions.doobie,          // Support for Quill 3.5.1
-  // "org.tpolecat" %% "doobie-specs2"    % Versions.doobie % Test, // Specs2 support for typechecking statements.
-  "org.tpolecat" %% "doobie-scalatest" % Versions.doobie % Test  // ScalaTest support for typechecking statements.
-
-)
+      // Start with this one
+      "org.tpolecat" %% "doobie-core" % Versions.doobie,
+      // And add any of these as needed
+      "org.tpolecat" %% "doobie-h2"       % Versions.doobie, // H2 driver 1.4.200 + type mappings.
+      "org.tpolecat" %% "doobie-hikari"   % Versions.doobie, // HikariCP transactor.
+      "org.tpolecat" %% "doobie-postgres" % Versions.doobie, // Postgres driver 42.2.12 + type mappings.
+      // "org.tpolecat" %% "doobie-quill"     % Versions.doobie,          // Support for Quill 3.5.1
+      // "org.tpolecat" %% "doobie-specs2"    % Versions.doobie % Test, // Specs2 support for typechecking statements.
+      "org.tpolecat" %% "doobie-scalatest" % Versions.doobie % Test // ScalaTest support for typechecking statements.
+    )
 )
 
 lazy val users = (project in file("modules/users"))
