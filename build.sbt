@@ -48,7 +48,7 @@ lazy val commonSettings = Seq(
       "-Wnumeric-widen", // Warn when numerics are widened.
       "-Woctal-literal", // Warn on obsolete octal syntax.
       "-Xlint:implicit-recursion", // Warn when an implicit resolves to an enclosing self-definition.
-      "-Wunused:imports", // Warn if an import selector is not referenced.
+      // "-Wunused:imports", // Warn if an import selector is not referenced.
       "-Wunused:patvars", // Warn if a variable bound in a pattern is unused.
       "-Wunused:privates", // Warn if a private member is unused.
       "-Wunused:locals", // Warn if a local definition is unused.
